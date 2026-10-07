@@ -6,21 +6,29 @@
 
 <div class="container py-5">
 
-    <div class="text-center mb-4">
+    <!-- ENCABEZADO -->
 
-        <h1 class="display-4 fw-bold">
-            🏀 {{ tema.nombre }}
+    <div class="tema-header text-center">
+
+        <div style="font-size: 65px;">
+            🏀
+        </div>
+
+        <h1>
+            {{ tema.nombre }}
         </h1>
 
-        <p class="lead">
+        <p class="lead mb-0">
             {{ tema.descripcion }}
         </p>
 
     </div>
 
 
+    <!-- CARRUSEL -->
+
     <div id="carouselBaloncesto"
-         class="carousel slide shadow"
+         class="carousel slide mb-5"
          data-bs-ride="carousel">
 
         <div class="carousel-indicators">
@@ -94,12 +102,224 @@
     </div>
 
 
-    <div class="text-center mt-4">
+    <!-- INTRODUCCIÓN -->
+
+    <div class="info-box mb-5">
+
+        <h2 class="fw-bold mb-3">
+            🏀 El baloncesto
+        </h2>
+
+        <p>
+            El baloncesto es uno de los deportes más populares del mundo.
+            Se juega entre dos equipos que buscan conseguir más puntos
+            lanzando el balón dentro de la canasta rival.
+        </p>
+
+        <p class="mb-0">
+            En la NBA destacan jugadores con diferentes estilos de juego.
+            A continuación presentamos a dos grandes figuras:
+            <strong>LeBron James</strong> y <strong>Ja Morant</strong>.
+        </p>
+
+    </div>
+
+
+    <!-- JUGADORES -->
+
+    <h2 class="text-center fw-bold mb-4">
+        ⭐ Jugadores destacados
+    </h2>
+
+
+    <div class="row g-4 mb-5">
+
+
+        <!-- LEBRON -->
+
+        <div class="col-md-6">
+
+            <div class="card jugador-card shadow">
+
+                <img src="/static/images/basquet1.jpg"
+                     alt="LeBron James">
+
+                <div class="card-body">
+
+                    <div class="jugador-numero">
+                        #23
+                    </div>
+
+                    <h3 class="fw-bold">
+                        LeBron James
+                    </h3>
+
+                    <p class="text-muted">
+                        Los Angeles Lakers
+                    </p>
+
+                    <p>
+                        LeBron James es considerado uno de los mejores
+                        jugadores de la historia del baloncesto.
+                        Destaca por su fuerza, visión de juego,
+                        capacidad de pase y anotación.
+                    </p>
+
+                    <ul>
+
+                        <li>🏆 4 veces campeón de la NBA</li>
+
+                        <li>🏆 4 veces MVP de la NBA</li>
+
+                        <li>⭐ Múltiples selecciones al All-Star</li>
+
+                        <li>🇺🇸 Campeón olímpico</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- JA MORANT -->
+
+        <div class="col-md-6">
+
+            <div class="card jugador-card shadow">
+
+                <img src="/static/images/basquet2.jpg"
+                     alt="Ja Morant">
+
+                <div class="card-body">
+
+                    <div class="jugador-numero">
+                        #12
+                    </div>
+
+                    <h3 class="fw-bold">
+                        Ja Morant
+                    </h3>
+
+                    <p class="text-muted">
+                        Memphis Grizzlies
+                    </p>
+
+                    <p>
+                        Ja Morant es uno de los bases más explosivos
+                        de la NBA. Es conocido por su velocidad,
+                        manejo del balón y espectaculares
+                        finalizaciones cerca del aro.
+                    </p>
+
+                    <ul>
+
+                        <li>⚡ Gran velocidad y explosividad</li>
+
+                        <li>🏀 Excelente manejo del balón</li>
+
+                        <li>🔥 Especialista en atacar el aro</li>
+
+                        <li>⭐ Uno de los jugadores jóvenes destacados</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- COMPARACIÓN -->
+
+    <div class="info-box mb-5">
+
+        <h2 class="fw-bold text-center mb-4">
+            ⚔️ Comparación
+        </h2>
+
+        <div class="table-responsive">
+
+            <table class="table table-hover text-center">
+
+                <thead class="table-dark">
+
+                    <tr>
+
+                        <th>Característica</th>
+
+                        <th>LeBron James</th>
+
+                        <th>Ja Morant</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Posición</td>
+
+                        <td>Alero</td>
+
+                        <td>Base</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Estilo</td>
+
+                        <td>Completo</td>
+
+                        <td>Explosivo</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Fortaleza</td>
+
+                        <td>Físico y visión</td>
+
+                        <td>Velocidad y salto</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Número</td>
+
+                        <td>#23</td>
+
+                        <td>#12</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- VOLVER -->
+
+    <div class="text-center">
 
         <a href="{% url 'inicio:inicio' %}"
-           class="btn btn-secondary">
+           class="btn btn-secondary btn-volver">
 
-            Volver al inicio
+            ← Volver al inicio
 
         </a>
 

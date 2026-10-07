@@ -1,0 +1,359 @@
+body {
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+}
+
+.navbar {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-weight: 800;
+}
+
+
+/* INICIO */
+
+.titulo-principal {
+    font-weight: 800;
+    color: #111827;
+}
+
+.subtitulo {
+    color: #64748b;
+}
+
+.tema-card {
+    border: none;
+    border-radius: 24px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tema-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18) !important;
+}
+
+.tema-card .card-body {
+    padding: 40px;
+}
+
+.tema-icono {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.btn-tema {
+    border-radius: 30px;
+    padding: 11px 28px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-tema:hover {
+    transform: scale(1.05);
+}
+
+
+/* HERO */
+
+.hero-inicio {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #1e3a8a,
+        #312e81
+    );
+    color: white;
+}
+
+.hero-contenido {
+    padding: 80px 20px;
+}
+
+.hero-icono {
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+
+.hero-contenido h1 {
+    font-size: 55px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero-contenido p {
+    font-size: 20px;
+    color: #dbeafe;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.btn-hero {
+    border-radius: 30px;
+    padding: 13px 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-hero:hover {
+    transform: translateY(-3px);
+}
+
+
+/* SECCIONES */
+
+.seccion-etiqueta {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #2563eb;
+}
+
+.titulo-seccion {
+    font-size: 38px;
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+
+/* TARJETAS DEL INICIO */
+
+.tema-card-inicio {
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.35s ease;
+}
+
+.tema-card-inicio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+.tema-imagen {
+    height: 160px;
+    overflow: hidden;
+}
+
+.tema-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.tema-card-inicio:hover .tema-imagen img {
+    transform: scale(1.05);
+}
+
+.tema-contenido {
+    padding: 30px;
+}
+
+.tema-categoria {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #64748b;
+}
+
+.tema-contenido h3 {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 8px 0 12px;
+}
+
+.tema-contenido p {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+
+/* INFORMACIÓN */
+
+.seccion-info {
+    background: #f1f5f9;
+    padding: 80px 0;
+}
+
+.info-inicio {
+    background: white;
+    border-radius: 22px;
+    padding: 35px 25px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.info-inicio:hover {
+    transform: translateY(-7px);
+}
+
+.info-icono {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.info-inicio h3 {
+    font-weight: 800;
+}
+
+.info-inicio p {
+    color: #64748b;
+}
+
+
+/* PÁGINAS DE TEMAS */
+
+.tema-header {
+    background: linear-gradient(135deg, #111827, #334155);
+    color: white;
+    border-radius: 25px;
+    padding: 45px 30px;
+    margin-bottom: 35px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+.tema-header h1 {
+    font-weight: 800;
+}
+
+
+/* CARRUSEL */
+
+.carousel {
+    border-radius: 24px;
+    overflow: hidden;
+    background: #111827;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.carousel img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    background: #111827;
+}
+
+
+/* JUGADORES */
+
+.jugador-card {
+    border: none;
+    border-radius: 22px;
+    overflow: hidden;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.jugador-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+}
+
+.jugador-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.jugador-card .card-body {
+    padding: 25px;
+}
+
+.jugador-numero {
+    font-size: 40px;
+    font-weight: 800;
+    color: #2563eb;
+}
+
+
+/* INFORMACIÓN DE TEMAS */
+
+.info-box {
+    background: white;
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* FINAL */
+
+.final-inicio {
+    background: linear-gradient(
+        135deg,
+        #1e293b,
+        #334155
+    );
+    color: white;
+    border-radius: 25px;
+    padding: 60px 25px;
+}
+
+.final-icono {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.final-inicio h2 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.final-inicio p {
+    color: #cbd5e1;
+}
+
+
+/* BOTÓN VOLVER */
+
+.btn-volver {
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+
+    .hero-contenido h1 {
+        font-size: 38px;
+    }
+
+    .hero-contenido p {
+        font-size: 17px;
+    }
+
+    .titulo-seccion {
+        font-size: 30px;
+    }
+
+    .tema-imagen {
+        height: 140px;
+    }
+
+    .carousel img {
+        height: 300px;
+    }
+
+    .jugador-card img {
+        height: 250px;
+    }
+
+    .tema-header {
+        padding: 30px 20px;
+    }
+
+}

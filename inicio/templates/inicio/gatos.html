@@ -6,16 +6,30 @@
 
 <div class="container py-5">
 
-    <div class="text-center mb-4">
-        <h1 class="display-4 fw-bold">🐱 {{ tema.nombre }}</h1>
+    <!-- ENCABEZADO -->
 
-        <p class="lead">
+    <div class="tema-header text-center">
+
+        <div style="font-size: 65px;">
+            🐱
+        </div>
+
+        <h1>
+            {{ tema.nombre }}
+        </h1>
+
+        <p class="lead mb-0">
             {{ tema.descripcion }}
         </p>
+
     </div>
 
 
-    <div id="carouselGatos" class="carousel slide shadow" data-bs-ride="carousel">
+    <!-- CARRUSEL -->
+
+    <div id="carouselGatos"
+         class="carousel slide mb-5"
+         data-bs-ride="carousel">
 
         <div class="carousel-indicators">
 
@@ -39,15 +53,20 @@
         <div class="carousel-inner">
 
             <div class="carousel-item active">
+
                 <img src="/static/images/gato1.jpg"
                      class="d-block w-100"
                      alt="Gato">
+
             </div>
 
+
             <div class="carousel-item">
+
                 <img src="/static/images/gato2.jpg"
                      class="d-block w-100"
                      alt="Gato">
+
             </div>
 
         </div>
@@ -83,12 +102,231 @@
     </div>
 
 
-    <div class="text-center mt-4">
+    <!-- INFORMACIÓN -->
+
+    <div class="info-box mb-5">
+
+        <h2 class="fw-bold mb-3">
+            🐾 Sobre los gatos
+        </h2>
+
+        <p>
+            Los gatos son animales domésticos conocidos por su
+            curiosidad, inteligencia e independencia. Son excelentes
+            compañeros y pueden adaptarse a diferentes tipos de hogares.
+        </p>
+
+        <p class="mb-0">
+            Aunque suelen ser independientes, también pueden crear
+            vínculos muy fuertes con las personas y demostrar afecto
+            de diferentes maneras.
+        </p>
+
+    </div>
+
+
+    <!-- CARACTERÍSTICAS -->
+
+    <h2 class="text-center fw-bold mb-4">
+        🐾 Características
+    </h2>
+
+
+    <div class="row g-4 mb-5">
+
+
+        <div class="col-md-4">
+
+            <div class="card jugador-card shadow">
+
+                <div class="card-body text-center">
+
+                    <div style="font-size: 50px;">
+                        🧠
+                    </div>
+
+                    <h3 class="fw-bold">
+                        Inteligentes
+                    </h3>
+
+                    <p>
+                        Pueden aprender rutinas, reconocer personas
+                        y adaptarse rápidamente a su entorno.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="card jugador-card shadow">
+
+                <div class="card-body text-center">
+
+                    <div style="font-size: 50px;">
+                        🐾
+                    </div>
+
+                    <h3 class="fw-bold">
+                        Ágiles
+                    </h3>
+
+                    <p>
+                        Poseen gran coordinación y pueden realizar
+                        saltos y movimientos muy rápidos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="card jugador-card shadow">
+
+                <div class="card-body text-center">
+
+                    <div style="font-size: 50px;">
+                        ❤️
+                    </div>
+
+                    <h3 class="fw-bold">
+                        Cariñosos
+                    </h3>
+
+                    <p>
+                        Muchos gatos desarrollan fuertes vínculos
+                        con sus dueños y disfrutan de la compañía.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CUIDADOS -->
+
+    <div class="info-box mb-5">
+
+        <h2 class="fw-bold mb-4">
+            🏠 Cuidados básicos
+        </h2>
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <ul>
+
+                    <li class="mb-2">
+                        🍖 Alimentación equilibrada
+                    </li>
+
+                    <li class="mb-2">
+                        💧 Agua fresca todos los días
+                    </li>
+
+                    <li class="mb-2">
+                        🧹 Mantener limpio su espacio
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <ul>
+
+                    <li class="mb-2">
+                        🩺 Controles veterinarios
+                    </li>
+
+                    <li class="mb-2">
+                        🧸 Juegos y estimulación
+                    </li>
+
+                    <li class="mb-2">
+                        ❤️ Atención y cariño
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CURIOSIDADES -->
+
+    <div class="info-box mb-5">
+
+        <h2 class="fw-bold text-center mb-4">
+            😺 Curiosidades
+        </h2>
+
+        <div class="row text-center">
+
+            <div class="col-md-4">
+
+                <h3>👂</h3>
+
+                <p>
+                    Los gatos tienen un excelente sentido de la audición.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <h3>😴</h3>
+
+                <p>
+                    Pueden pasar una gran parte del día durmiendo.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <h3>🐈</h3>
+
+                <p>
+                    Utilizan diferentes sonidos y lenguaje corporal
+                    para comunicarse.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- VOLVER -->
+
+    <div class="text-center">
 
         <a href="{% url 'inicio:inicio' %}"
-           class="btn btn-secondary">
+           class="btn btn-secondary btn-volver">
 
-            Volver al inicio
+            ← Volver al inicio
 
         </a>
 

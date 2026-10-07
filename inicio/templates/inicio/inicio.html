@@ -1,8 +1,263 @@
 {% extends 'base.html' %}
-{% block title %}Inicio APP{% endblock %}
+
+{% block title %}Inicio{% endblock %}
+
 {% block content %}
-<h1>Pagina de Inicio</h1>
-<p>
-Esta es la pagina de inicio de mi evaluacion
-</p>
+
+<section class="hero-inicio">
+
+    <div class="container">
+
+        <div class="hero-contenido text-center">
+
+            <div class="hero-icono">
+                🌟
+            </div>
+
+            <h1>
+                Bienvenido a nuestro sitio
+            </h1>
+
+            <p>
+                Descubre información interesante sobre
+                animales y baloncesto.
+            </p>
+
+            <a href="#temas"
+               class="btn btn-light btn-hero">
+
+                Explorar temas ↓
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="temas" class="container py-5">
+
+    <div class="text-center mb-5">
+
+        <span class="seccion-etiqueta">
+            EXPLORA
+        </span>
+
+        <h2 class="titulo-seccion">
+            Nuestros temas
+        </h2>
+
+        <p class="subtitulo">
+            Elige un tema y descubre toda la información.
+        </p>
+
+    </div>
+
+
+    <div class="row g-4 justify-content-center">
+
+        {% for tema in temas %}
+
+        <div class="col-lg-5 col-md-6">
+
+            <div class="tema-card-inicio">
+
+                {% if tema.id == 1 %}
+
+                    <div class="tema-imagen">
+
+                        <img src="/static/images/inicio-gatos.jpg"
+                             alt="Gatos">
+
+                    </div>
+
+                    <div class="tema-contenido">
+
+                        <span class="tema-categoria">
+                            ANIMALES
+                        </span>
+
+                        <h3>
+                            {{ tema.nombre }}
+                        </h3>
+
+                        <p>
+                            {{ tema.descripcion }}
+                        </p>
+
+                        <a href="{% url tema.url %}"
+                           class="btn btn-primary btn-tema">
+
+                            Conocer más →
+
+                        </a>
+
+                    </div>
+
+                {% else %}
+
+                    <div class="tema-imagen">
+
+                        <img src="/static/images/inicio-baloncesto.jpg"
+                             alt="Baloncesto">
+
+                    </div>
+
+                    <div class="tema-contenido">
+
+                        <span class="tema-categoria">
+                            DEPORTES
+                        </span>
+
+                        <h3>
+                            {{ tema.nombre }}
+                        </h3>
+
+                        <p>
+                            {{ tema.descripcion }}
+                        </p>
+
+                        <a href="{% url tema.url %}"
+                           class="btn btn-primary btn-tema">
+
+                            Conocer más →
+
+                        </a>
+
+                    </div>
+
+                {% endif %}
+
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+
+<section class="seccion-info">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="seccion-etiqueta">
+                DESCUBRE
+            </span>
+
+            <h2 class="titulo-seccion">
+                ¿Qué encontrarás?
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="info-inicio">
+
+                    <div class="info-icono">
+                        📚
+                    </div>
+
+                    <h3>
+                        Información
+                    </h3>
+
+                    <p>
+                        Contenido organizado y fácil de entender
+                        sobre cada uno de nuestros temas.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="info-inicio">
+
+                    <div class="info-icono">
+                        🖼️
+                    </div>
+
+                    <h3>
+                        Imágenes
+                    </h3>
+
+                    <p>
+                        Cada sección cuenta con imágenes y
+                        carruseles para complementar la información.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="info-inicio">
+
+                    <div class="info-icono">
+                        💻
+                    </div>
+
+                    <h3>
+                        Diseño responsive
+                    </h3>
+
+                    <p>
+                        La página está diseñada para adaptarse
+                        a computadores, tablets y celulares.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="container py-5">
+
+    <div class="final-inicio text-center">
+
+        <div class="final-icono">
+            🚀
+        </div>
+
+        <h2>
+            ¡Comienza a explorar!
+        </h2>
+
+        <p>
+            Selecciona uno de nuestros temas y descubre
+            toda la información disponible.
+        </p>
+
+        <a href="#temas"
+           class="btn btn-light btn-hero mt-2">
+
+            Ver temas
+
+        </a>
+
+    </div>
+
+</section>
+
 {% endblock %}
